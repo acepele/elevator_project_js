@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style/main.css">
+
+    <title>Elevator</title>
+</head>
+
+<body>
+    <div class="main">
+        <!--The <svg> tag defines a container for SVG graphics-->
+        <svg id="q1">
+        <!--Making horizontal lines to create the floors, are 10 floors in total-->
+        <line id="line" x1="0" y1="50" x2="500" y2="50" style="stroke: white;"/>
+        <line id="line" x1="0" y1="100" x2="500" y2="100" style="stroke: white;"/>
+        <line id="line" x1="0" y1="150" x2="500" y2="150" style="stroke: white;"/>
+        <line id="line" x1="0" y1="200" x2="500" y2="200" style="stroke: white;"/>
+        <line id="line" x1="0" y1="250" x2="500" y2="250" style="stroke: white;"/>
+        <line id="line" x1="0" y1="300" x2="500" y2="300" style="stroke: white;"/>
+        <line id="line" x1="0" y1="350" x2="500" y2="350" style="stroke: white;"/>
+        <line id="line" x1="0" y1="400" x2="500" y2="400" style="stroke: white;"/>
+        <line id="line" x1="0" y1="450" x2="500" y2="450" style="stroke: white;"/>
+
+        <!--the rect helps to make the building. The <rect> element is a basic SVG shape that draws rectangles, defined by their position, width, and height.-->
+        <rect x="250" y="0" height="500" width="250" style="stroke: #2b1919; fill: #c76711;"/>
+        <line x1="200" y1="0" x2="200" y2="500" style="stroke: #2b1919;"/>
+        
+        <!-- horizontal lines to make the other half of the building-->
+        <line x1="200" y1="50" x2="500" y2="50" style="stroke: white;"/>
+        <line x1="200" y1="100" x2="500" y2="100" style="stroke: white;"/>
+        <line x1="200" y1="150" x2="500" y2="150" style="stroke: white;"/>
+        <line x1="200" y1="200" x2="500" y2="200" style="stroke: white;"/>
+        <line x1="200" y1="250" x2="500" y2="250" style="stroke: white;"/>
+        <line x1="200" y1="300" x2="500" y2="300" style="stroke: white;"/>
+        <line x1="200" y1="350" x2="500" y2="350" style="stroke: white;"/>
+        <line x1="200" y1="400" x2="500" y2="400" style="stroke: white;"/>
+        <line x1="200" y1="450" x2="500" y2="450" style="stroke: white;"/>
+
+        <rect x="300"  y="10" height="30" width="25" style="stroke: powderblue; fill:powderblue  "/>
+        <rect x="420"  y="10" height="30" width="25" style="stroke: powderblue; fill:powderblue"/>
+        <rect x="300"  y="60" height="30" width="25" style="stroke: powderblue; fill:powderblue"/>
+        <rect x="420"  y="60" height="30" width="25" style="stroke: powderblue; fill:powderblue"/>
+        <rect x="300"  y="110" height="30" width="25" style="stroke: powderblue; fill:powderblue"/>
+        <rect x="420"  y="110" height="30" width="25" style="stroke: powderblue; fill:powderblue"/>
+        <rect x="300"  y="160" height="30" width="25" style="stroke: powderblue; fill:powderblue"/>
+        <rect x="420"  y="160" height="30" width="25" style="stroke: powderblue; fill:powderblue"/>
+        <rect x="300"  y="210" height="30" width="25" style="stroke: powderblue; fill:powderblue"/>
+        <rect x="420"  y="210" height="30" width="25" style="stroke: powderblue; fill:powderblue"/>
+        <rect x="300"  y="260" height="30" width="25" style="stroke: powderblue; fill:powderblue"/>
+        <rect x="420"  y="260" height="30" width="25" style="stroke: powderblue; fill:powderblue"/>
+        <rect x="300"  y="310" height="30" width="25" style="stroke: powderblue; fill:powderblue"/>
+        <rect x="420"  y="310" height="30" width="25" style="stroke: powderblue; fill:powderblue"/>
+        <rect x="300"  y="360" height="30" width="25" style="stroke: powderblue; fill:powderblue"/>
+        <rect x="420"  y="360" height="30" width="25" style="stroke: powderblue; fill:powderblue"/>
+        <rect x="300"  y="410" height="30" width="25" style="stroke: powderblue; fill:powderblue"/>
+        <rect x="420"  y="410" height="30" width="25" style="stroke: powderblue; fill:powderblue"/>
+        <rect x="300"  y="460" height="30" width="25" style="stroke: powderblue; fill:powderblue"/>
+        <rect x="420"  y="460" height="30" width="25" style="stroke: powderblue; fill:powderblue"/>
+
+        <rect x="30"  y="10" height="30" width="25" style="stroke: powderblue; fill:powderblue  "/>
+        <rect x="150"  y="10" height="30" width="25" style="stroke: powderblue; fill:powderblue"/>
+        <rect x="30"  y="60" height="30" width="25" style="stroke: powderblue; fill:powderblue"/>
+        <rect x="150"  y="60" height="30" width="25" style="stroke: powderblue; fill:powderblue"/>
+        <rect x="30"  y="110" height="30" width="25" style="stroke: powderblue; fill:powderblue"/>
+        <rect x="150"  y="110" height="30" width="25" style="stroke: powderblue; fill:powderblue"/>
+        <rect x="30"  y="160" height="30" width="25" style="stroke: powderblue; fill:powderblue"/>
+        <rect x="150"  y="160" height="30" width="25" style="stroke: powderblue; fill:powderblue"/>
+        <rect x="30"  y="210" height="30" width="25" style="stroke: powderblue; fill:powderblue"/>
+        <rect x="150"  y="210" height="30" width="25" style="stroke: powderblue; fill:powderblue"/>
+        <rect x="30"  y="260" height="30" width="25" style="stroke: powderblue; fill:powderblue"/>
+        <rect x="150"  y="260" height="30" width="25" style="stroke: powderblue; fill:powderblue"/>
+        <rect x="30"  y="310" height="30" width="25" style="stroke: powderblue; fill:powderblue"/>
+        <rect x="150"  y="310" height="30" width="25" style="stroke: powderblue; fill:powderblue"/>
+        <rect x="30"  y="360" height="30" width="25" style="stroke: powderblue; fill:powderblue"/>
+        <rect x="150"  y="360" height="30" width="25" style="stroke: powderblue; fill:powderblue"/>
+        <rect x="30"  y="410" height="30" width="25" style="stroke: powderblue; fill:powderblue"/>
+        <rect x="150"  y="410" height="30" width="25" style="stroke: powderblue; fill:powderblue"/>
+        <rect x="30"  y="460" height="30" width="25" style="stroke: powderblue; fill:powderblue"/>
+        <rect x="150"  y="460" height="30" width="25" style="stroke: powderblue; fill:powderblue"/>
+
+
+        <defs>
+
+<!-- the form which will represent the elevator-->
+<!--The <g> element is used to group SVG shapes together.-->
+            <g id="liftAndText">
+                <!-- lift -->
+<!-- rect which will represent the elevator with 50x50 dimensions-->
+                <rect id="lift" height="50" width="50" style="stroke: #2b1919;fill: black;"/>
+
+            </g>
+        </defs>
+
+<!-- the form to make the animation-->
+        <use id="usedLiftAndText" xlink:href="#liftAndText" x="200" y="450"></use>
+    </svg>
+
+        <div class="result-section">
+            <p id="result"></p>
+            <div>
+
+                <!-- the form in which we will select the floor where the elevator will go-->
+                <form action="#" id="selectForm">
+                    <label for="select-floor">Select the floor</label>
+                    <div class="select">
+                        <select name="select-floor" id="selectFloor">
+                    <option value="10">1</option>
+                    <option value="9">2</option>
+                    <option value="8">3</option>
+                    <option value="7">4</option>
+                    <option value="6">5</option>
+                    <option value="5">6</option>
+                    <option value="4">7</option>
+                    <option value="3">8</option>
+                    <option value="2">9</option>
+                    <option value="1">10</option>
+                </select>
+
+                        <!-- after we will select a floor, the button will call the functionality of the elevator's movement-->
+                        <button type="button" id="goBtn">Go</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <script src="javascript/script.js"></script>
+</body>

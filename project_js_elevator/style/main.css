@@ -1,0 +1,60 @@
+body {
+    margin: 20px;
+    text-align: center;
+    height: 500px;
+}
+
+svg {
+    background-color: #c76711;
+    border: 1px solid black;
+    width: 500px;
+}
+
+#q1 {
+    height: 500px;
+}
+
+#line {
+    stroke: rgb(255, 0, 0);
+}
+
+.result-section {
+    margin-left: 23%;
+    background: beige;
+    width: 20%;
+    height: 200px;
+    margin-top: 120px;
+}
+
+.main {
+    display: flex;
+}
+
+#result {
+    font-size: 20px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+.select {
+    margin-top: 40px;
+}
+
+button {
+    width: 20%;
+    height: 30px;
+    background-color: rgba(32, 178, 170, 0.64);
+    border: none;
+    border-radius: 10px;
+}
+
+button:active {
+    background-color: lightseagreen;
+}
+
+button:hover {
+    background-color: lightseagreen;
+}
